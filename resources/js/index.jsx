@@ -13,6 +13,7 @@ import $ from'jquery/dist/jquery.min.js'
 import Popper from'@popperjs/core/dist/cjs/popper'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
+import { PhotoProvider } from 'react-image-previewer'
 
 import './quartz_bootstrap.min.css'
 
@@ -28,8 +29,10 @@ root.render(
         href={favicon}
       />
     </Helmet>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <PhotoProvider>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </PhotoProvider>
   </React.StrictMode>
 )

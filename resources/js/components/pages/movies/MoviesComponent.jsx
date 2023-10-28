@@ -3,6 +3,7 @@ import { useNavigate, } from 'react-router-dom'
 import { useDispatch, useSelector, } from 'react-redux'
 import { authorize } from '../../../redux/actions/authActions'
 import { searchMovies } from '../../../redux/actions/moviesActions'
+import { PhotoView } from 'react-image-previewer'
 
 import "./MoviesComponent.scss"
 
@@ -35,6 +36,31 @@ export default function MoviesComponent() {
     e.preventDefault()
 
     dispatch(searchMovies(query))
+  }
+
+  const renderData = () => {
+    if (!state.movies.data) {
+      return null
+    }
+    return state.movies
+      .data
+      .Search
+      .map(({
+        Poster,
+        Title,
+        Year,
+        Type,
+        imdbID
+      }, index) => (
+        <div className="card" key={index}>
+          <div className="card-header">
+            <PhotoView src={Poster}>
+              <img className="img-responsive poster" src={Poster} alt="" />
+            </PhotoView>
+            {Title} ({Year})
+          </div>
+        </div>
+      ))
   }
 
   if (!state.auth.loading && typeof state.auth.data === 'object' && null !== state.auth.data) {
@@ -86,6 +112,11 @@ export default function MoviesComponent() {
                 />
               </div>
             </form>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-6 offset-md-3">
+            {renderData()}
           </div>
         </div>
       </div>
