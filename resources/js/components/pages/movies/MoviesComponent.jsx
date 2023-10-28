@@ -1,7 +1,6 @@
 import React, { useEffect, } from 'react'
 import { useNavigate, } from 'react-router-dom'
 import { useDispatch, useSelector, } from 'react-redux'
-import ReactPaginate from 'react-paginate'
 import { authorize } from '../../../redux/actions/authActions'
 
 import "./MoviesComponent.scss"
