@@ -6,6 +6,8 @@
 
 (28-Oct-2023) A search movies Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
 
+* [Tinker](#tinker)
+
 * [Using Thunder Client?](#using-thunder-client)
 
 * [Installation](#installation)
@@ -27,6 +29,23 @@
 * [Contributing](#contributing)
 
 * [License](#license)
+
+## Tinker
+
+```bash
+php artisan tinker
+> $m = new App\Models\V1\Movie();
+> $r = $m->search("avengers");
+> $v = json_decode($r, true);
+> $v
+= [
+    "Search" => [
+      [
+        "Title" => "The Avengers",
+        "Year" => "2012",
+        "imdbID" => "tt0848228",
+        ...
+```
 
 ## Using Thunder Client?
 
