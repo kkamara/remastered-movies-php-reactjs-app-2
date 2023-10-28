@@ -2,9 +2,9 @@
 
 ![php-reactjs-boilerplate2.png](https://github.com/kkamara/useful/blob/main/php-reactjs-boilerplate2.png?raw=true)
 
-# PHP Reactjs Boilerplate [![API](https://github.com/kkamara/php-reactjs-boilerplate/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/php-reactjs-boilerplate/actions/workflows/build.yml)
+# Movies PHP Reactjs App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml)
 
-(2021) A GDPR compliant Laravel 10.x boilerplate with Redux.
+(28-Oct-2023) A Movie Search Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
 
 * [Using Thunder Client?](#using-thunder-client)
 

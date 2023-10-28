@@ -1,8 +1,8 @@
 {
-    "name": "kkamara/php-reactjs-boilerplate",
-    "version": "0.3.1",
+    "name": "kkamara/movies-php-reactjs-app-2",
+    "version": "0.1.0",
     "type": "project",
-    "description": "(2021) A GDPR compliant Laravel 10.x boilerplate with Redux.",
+    "description": "(28-Oct-2023) A Movie Search Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.",
     "keywords": [
         "web",
         "web-app",
