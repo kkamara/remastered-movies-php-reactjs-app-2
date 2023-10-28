@@ -5,6 +5,10 @@ use Illuminate\Support\ServiceProvider;
 
 return [
 
+    "rapid_api_key" => env("RAPID_API_KEY"),
+
+    "rapid_api_host" => env("RAPID_API_HOST"),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
