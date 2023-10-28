@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Movies PHP Reactjs App 2",
-    "dateExported": "2023-10-28T12:52:29.762Z",
+    "dateExported": "2023-10-28T14:43:21.405Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -29,11 +29,11 @@
             "colId": "faecfca7-bdf8-49db-b762-690247f3179b",
             "containerId": "",
             "name": "Get Users",
-            "url": "http://localhost:3000/web/users",
+            "url": "http://localhost:3000/api/web/users",
             "method": "GET",
             "sortNum": 20000,
             "created": "2023-10-28T12:52:06.655Z",
-            "modified": "2023-10-28T12:52:06.655Z",
+            "modified": "2023-10-28T14:43:02.210Z",
             "headers": [
                 {
                     "name": "Accept",
@@ -41,6 +41,31 @@
                 }
             ],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bda30072-95a2-4925-8651-7c843fe456a4",
+            "colId": "faecfca7-bdf8-49db-b762-690247f3179b",
+            "containerId": "",
+            "name": "Search Movies",
+            "url": "http://localhost:3000/api/web/v1/search?query=avengers",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-28T14:36:31.280Z",
+            "modified": "2023-10-28T14:41:39.290Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [
+                {
+                    "name": "query",
+                    "value": "avengers",
+                    "isPath": false
+                }
+            ],
             "tests": []
         }
     ]

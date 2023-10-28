@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Web\V1\MovieController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Web\UserController as WebUserController;
@@ -23,6 +24,12 @@ Route::prefix('web')
             Route::post('/', [WebUserController::class,'login']);
             Route::delete('/logout', [WebUserController::class,'logout']);
             Route::get('/authorize', [WebUserController::class,'authorizeUser']);
+        });
+        Route::prefix('/v1')->group(function () {
+            Route::get(
+                "/search", 
+                [MovieController::class, "search"]
+            )->name("search");
         });
         Route::get('/users', [WebUserController::class,'getUsers']);
     });
