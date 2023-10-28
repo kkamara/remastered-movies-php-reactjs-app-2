@@ -4,7 +4,7 @@
 
 # Movies PHP Reactjs App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml)
 
-(28-Oct-2023) A Movie Search Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
+(28-Oct-2023) A search movies Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
 
 * [Using Thunder Client?](#using-thunder-client)
 
