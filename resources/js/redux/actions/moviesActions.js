@@ -9,7 +9,7 @@ export const searchMovies = query => {
     dispatch({ type: movies.SEARCH_MOVIES_PENDING, })
 
     const tokenId = "user-token"
-    const path = 'movies/?query='+query
+    const path = 'v1/search/?query='+query
     await new Promise((resolve, reject) => {
       http.getData(http.domain+'/sanctum/csrf-cookie').then( 
         http.getData(path, tokenId).then(res => {
