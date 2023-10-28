@@ -10,19 +10,25 @@ use App\Http\Requests\V1\MovieRequest;
 
 class MovieController extends Controller
 {
-    public function __construct() {
+    public function __construct(protected Movie $movie = new Movie()) {
         $this->middleware('auth:sanctum')
             ->only(['search',]);
     }
 
     public function search(MovieRequest $request) {     
+        $response = $this->movie->search(
+            $request->input("query")
+        );
+        if (false === $response) {
+            return response()->json([
+                'data' => false,
+            ], Response::HTTP_OK);    
+        }
         return response()->json([
             'data' => json_decode(
-                (new Movie())->search(
-                    $request->input("query")
-                ),
+                $response,
                 true
             ),
-        ], Response::HTTP_CREATED);
+        ], Response::HTTP_OK);
     }
 }
