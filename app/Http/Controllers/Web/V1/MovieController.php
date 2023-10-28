@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Web\V1;
 
 use App\Http\Controllers\Controller;
 use App\Models\V1\Movie;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Requests\V1\MovieRequest;
 
