@@ -4,9 +4,9 @@
 
 <img src="https://github.com/kkamara/useful/blob/main/movies-php-reactjs-app-22.png?raw=true" alt="movies-php-reactjs-app-22.png" width=""/>
 
-# Movies PHP Reactjs App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml)
+# Remastered Movies PHP Reactjs App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml)
 
-(28-Oct-2023) A search movies Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
+(07-Nov-2023) A remastered search movies Reactjs App. A GDPR compliant Laravel 10.x boilerplate with Redux.
 
 * [Tinker](#tinker)
 
