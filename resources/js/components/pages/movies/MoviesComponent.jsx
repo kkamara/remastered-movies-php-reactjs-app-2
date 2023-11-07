@@ -42,7 +42,7 @@ export default function MoviesComponent() {
     if (!state.movies.data) {
       return null
     }
-    return state.movies
+    const movies = state.movies
       .data
       .Search
       .map(({
@@ -52,15 +52,23 @@ export default function MoviesComponent() {
         Type,
         imdbID
       }, index) => (
-        <div className="card" key={index}>
-          <div className="card-header">
-            <PhotoView src={Poster}>
-              <img className="img-responsive poster" src={Poster} alt="" />
-            </PhotoView>
-            {Title} ({Year})
+        <div className="col-md-2">
+          <div className="card" key={index}>
+            <div className="card-header">
+              <PhotoView src={Poster}>
+                <img className="img-responsive poster" src={Poster} alt="" />
+              </PhotoView>
+              <br />
+              {Title} ({Year})
+            </div>
           </div>
         </div>
       ))
+    return <div className="container">
+      <div className="row">
+        {movies}
+      </div>
+    </div>
   }
 
   if (!state.auth.loading && typeof state.auth.data === 'object' && null !== state.auth.data) {
@@ -114,11 +122,7 @@ export default function MoviesComponent() {
             </form>
           </div>
         </div>
-        <div className="row">
-          <div className="col-md-6 offset-md-3">
-            {renderData()}
-          </div>
-        </div>
+        {renderData()}
       </div>
     </>       
   )
