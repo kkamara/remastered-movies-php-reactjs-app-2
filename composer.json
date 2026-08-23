@@ -1,14 +1,14 @@
 {
-    "name": "kkamara/movies-php-reactjs-app-2",
+    "name": "kkamara/movies-php-react-app-2",
     "version": "0.1.0",
     "type": "project",
-    "description": "(07-Nov-2023) A remastered search movies Reactjs App. A GDPR compliant Laravel 10.x app with Redux.",
+    "description": "(07-Nov-2023) A remastered search movies React App. A GDPR compliant Laravel 10.x app with Redux.",
     "keywords": [
         "web",
         "web-app",
         "gdpr",
         "api",
-        "reactjs",
+        "react",
         "tests",
         "testing"
     ],

@@ -1,12 +1,12 @@
-<img src="https://github.com/kkamara/useful/blob/main/remastered-movies-php-reactjs-app-2.png?raw=true" alt="remastered-movies-php-reactjs-app-2.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/remastered-movies-php-react-app-2.png?raw=true" alt="remastered-movies-php-react-app-2.png" width=""/>
 
-<img src="https://github.com/kkamara/useful/blob/main/movies-php-reactjs-app-2.png?raw=true" alt="movies-php-reactjs-app-2.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/movies-php-react-app-2.png?raw=true" alt="movies-php-react-app-2.png" width=""/>
 
-<img src="https://github.com/kkamara/useful/blob/main/movies-php-reactjs-app-22.png?raw=true" alt="movies-php-reactjs-app-22.png" width=""/>
+<img src="https://github.com/kkamara/useful/blob/main/movies-php-react-app-22.png?raw=true" alt="movies-php-react-app-22.png" width=""/>
 
-# Remastered Movies PHP Reactjs App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-reactjs-app-2/actions/workflows/build.yml)
+# Remastered Movies PHP React App 2 [![Tests Pipeline](https://github.com/kkamara/movies-php-react-app-2/actions/workflows/build.yml/badge.svg)](https://github.com/kkamara/movies-php-react-app-2/actions/workflows/build.yml)
 
-(07-Nov-2023) A remastered search movies Reactjs App. A GDPR compliant Laravel 10.x app with Redux.
+(07-Nov-2023) A remastered search movies React App. A GDPR compliant Laravel 10.x app with Redux.
 
 * [Tinker](#tinker)
 
@@ -53,7 +53,7 @@ php artisan tinker
 
 [Thunder client](https://www.thunderclient.com/) Visual Studio Code extension.
 
-[thunder-collection_PHP Reactjs Boilerplate.json](https://github.com/kkamara/php-reactjs-boilerplate/blob/main/database/thunder-collection_PHP%20Reactjs%20Boilerplate.json)
+[thunder-collection_Movies PHP React App 2.json](./database/thunder-collection_Movies%20PHP%20React%20App%202.json)
 
 ## Installation
 * [https://laravel.com/docs/10.x/installation](https://laravel.com/docs/10.x/installation)
@@ -117,7 +117,7 @@ sail artisan queue:listen redis --queue stuff
 php artisan test --filter api
 ```
 
-View the unit test code [here](https://raw.githubusercontent.com/kkamara/php-reactjs-boilerplate/main/tests/Unit/Api/UsersTest.php).
+View the unit test code [here](./tests/Unit/Api/UsersTest.php).
 
 ## Browser Tests
 
@@ -132,7 +132,7 @@ You can test the `/mail` endpoint to send a test mail you can then view at `:802
 
 ![docker-mailhog3.png](https://raw.githubusercontent.com/kkamara/useful/main/docker-mailhog3.png)
 
-Mail environment credentials are at [.env](https://raw.githubusercontent.com/kkamara/php-reactjs-boilerplate/main/.env.example).
+Mail environment credentials are at [.env](.env.example).
 
 The [mailhog](https://github.com/mailhog/MailHog) docker image runs at `http://localhost:8025`.
 
